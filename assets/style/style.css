@@ -1,0 +1,194 @@
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  color: white;
+}
+
+.navbar-logo img {
+  height: 40px;
+}
+
+.navbar-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-menu li {
+  margin-left: 20px;
+}
+
+.navbar-menu li:first-child {
+  margin-left: 0;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar-menu li a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.header p {
+  font-weight: 600;
+}
+
+.profile-picture {
+  border-radius: 50%;
+}
+
+.article {
+  text-align: center;
+}
+
+.skills {
+  max-width: 800px;
+  margin: 3em auto;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+.media {
+  margin-bottom: 2rem;
+}
+
+.media h2 {
+  text-align: center;
+}
+
+.media .medsos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.media .medsos-li {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.gallery {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.image-row img {
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.image-row img:hover {
+  transform: scale(1.1);
+}
+
+footer {
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-menu li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .header {
+    margin-top: 1.5rem;
+    padding: 0.5rem;
+  }
+
+  .skills {
+    width: 90%;
+  }
+
+  .image-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-row img {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .navbar-menu {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .header {
+    margin-top: 2rem;
+  }
+
+  .image-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .image-row img {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .image-row {
+    justify-content: center;
+  }
+
+  .image-row img {
+    width: 180px;
+  }
+}
+
+@media (min-width: 1441px) {
+  .image-row {
+    justify-content: center;
+  }
+
+  .image-row img {
+    width: 200px;
+  }
+}
